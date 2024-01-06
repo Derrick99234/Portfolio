@@ -1,0 +1,90 @@
+@media screen and (max-width: 1201px){
+    
+    .home-content h3 {
+        font-size: 1.9rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content p {
+        font-size: 1.5rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 1024px){
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    .home-content p {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 769px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(50px);
+        width: 49%;
+        height: 100vh;
+        
+    }
+    
+    .navbar a {
+        display: block;
+        /* padding: 2rem 0; */
+        font: 1.1rem;
+        text-align: center;
+        margin: 4rem 0;
+    
+    }
+    #menu-icon {
+        display: inline-block;
+        font-size: 5rem;
+    }
+    #check:checked + .icons #menu-icon{
+        display: none;
+    }
+    #check:checked ~ .icons #close-icon{
+        display: block;
+    }
+    #check:checked ~ nav[class="navbar"]{
+        display: block;
+
+    }
+
+    .home div.home-content {
+        flex-flow: column-reverse wrap;
+    }
+    .home-img img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .container {
+        text-align: center;
+    }
+    .about {
+        flex-flow: column-reverse wrap;
+        gap: 3rem;
+    }
+    .about-content,
+    .about-content h2 {
+        text-align: center;
+    }
+    .about img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .home-content h1 {
+        font-size: 1.9rem;
+    }
+}
