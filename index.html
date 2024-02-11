@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="shortcut icon" href="images/derrick.jpg" type="image/x-icon" />
   </head>
   <body>
     <header class="header">
@@ -37,7 +38,7 @@
         <div class="container">
           <h3>Hello It's Me</h3>
           <h1>Olatunbosun Olashubomi</h1>
-          <h3>And I'm A <span>Frontend Web Developer</span></h3>
+          <h3>And I'm A <span class="multi-text"></span></h3>
           <p>
             I develop fully responsive modern website with my knownledge in
             HTML, CSS, Bootstrap and JAVASCRIPT | You can download my cv down
@@ -45,12 +46,12 @@
           </p>
 
           <div class="social-media">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=100089629576598" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/derricktechtron-73717b23a" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/Derrick9923" target="_blank"><i class="bx bxl-twitter"></i></a>
           </div>
-          <a href="Assets/Resune.pdf" class="btn">Download CV</a>
+          <a href="Assets/Resune.pdf" download class="btn">Download CV</a>
         </div>
         <div class="home-img">
           <img src="images/derrick.jpg" alt="" id="my-image" />
@@ -77,13 +78,13 @@
           though the journey was not smooth at all because i dont know where te
           to start from or because i dont know the roadmap to follow But...
         </p>
-        <a href="Assets/about.html" class="btn">Read More</a>
+        <a href="about.html" class="btn">Read More</a>
       </div>
     </section>
 
-    <!-- sevice sectio design -->
+    <!-- service section design -->
     <section class="services" id="services">
-      <h2 class="heading">Our <span>Servive</span></h2>
+      <h2 class="heading">Our <span>Service</span></h2>
 
       <div class="services-container">
         <div class="service-box">
@@ -95,7 +96,56 @@
             the industry building amazing website and have worked with Different
             Team on a Project quis nostrud mollit anim id est laborum.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <button  id="modalBtn" class="btn">Read More</button>
+        </div>
+
+        <div class="modal-container">
+          <div class="modal">
+            <figure>
+              <img src="images/software-developer.jpg" title="web development" alt="" loading="lazy" width="300" height="400" >
+            </figure>
+            <div class="content">
+               <p>
+                I have built responsive and modern website with my knowledge in
+                HTML, CSS, JavaScript and Bootstrap. I have 3 years Experience in
+                the industry building amazing website and have worked with Different
+                Team on a Project quis nostrud mollit anim id est laborum.
+              </p>
+              <button class="btn">view projects</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-container">
+          <div class="modal">
+            <figure>
+              <img src="images/derrick.jpg" alt="" loading="lazy" width="300" height="400" >
+            </figure>
+            <div class="content">
+               <p>
+                I have built responsive and modern website with my knowledge in
+                HTML, CSS, JavaScript and Bootstrap. I have 3 years Experience in
+                the industry building amazing website and have worked with Different
+                Team on a Project quis nostrud mollit anim id est laborum.
+              </p>
+              <button class="btn">view projects</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-container">
+          <div class="modal">
+            <figure>
+              <img src="images/portfolio3.webp" title="web development" alt="" loading="lazy" width="300" height="400" >
+            </figure>
+            <div class="content">
+               <p>
+                I have built responsive and modern website with my knowledge in
+                HTML, CSS, JavaScript and Bootstrap. I have 3 years Experience in
+                the industry building amazing website and have worked with Different
+                Team on a Project quis nostrud mollit anim id est laborum.
+              </p>
+              <button class="btn">view projects</button>
+            </div>
+          </div>
         </div>
 
         <div class="service-box">
@@ -107,7 +157,7 @@
             advertisement, i also design Book Covers Like Note Books, Text
             Books, and so on... quis nostrud mollit anim id est laborum.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <button  id="modalBtn" class="btn">Read More</button>
         </div>
 
         <div class="service-box">
@@ -115,13 +165,83 @@
           <h3>Content Creating & Affiliate marketing</h3>
           <p>
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud mollit anim id est laborum.
+            veniam, quis nostrud mollit anim id est laborum. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Tempora, tenetur!
           </p>
-          <a href="#" class="btn">Read More</a>
+          <button  id="modalBtn" class="btn">Read More</button>
         </div>
       </div>
     </section>
+    <!-- <hr style=" background-color: white; height: 2px; "> -->
+    <section class="experience_skill">
+      <h2 class="heading">Last <span>Experience </span>and <span>Skills</span></h2>
+      <div class="skills-wrapper">
+        <article class="last-experience" >
+          <h3 class="heading">BABTECH COMPUTER</h3>
+          <p>
+            As an Instructor in Babtech Computers, i take pride in guiding and empowering budding IT enthusiasts to confidently navigate the dynamic world of web development. Specializing in frontend technologies like React, HTML, CSS, JavaScript, and beyond, i curate abd deliver comprehensive course meticulously designed to instill practice expertise and cultivate a profound grasp of contemporary web development fundamentals
+          </p>
+          <p>
+            My role as an instructor in Babtech Computers allow me make a tangible impacts by shaping the next generation of web developers. By fostering an environment of innovation, critical thinking and hands-on learning, I aim to continue guiding and inspiring individuals to excel in the ever-evolving field of IT.
+          </p>
+          <div class="skills-used">
+            <p>Skills used in the field are:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          </article>
+        <div class="skills">
+            <div class="html">
+              <label for="html">HTML and CSS</label>
+              <div class="bar">
+                <div class="progress" per="90" style="max-width: 90%;" ></div>
+              </div>
+            </div>
+            <div class="javaScript">
+              <label for="javaScript">JavaScript</label>
+              <div class="bar">
+              <div class="progress" per="85" style="max-width: 85%;" ></div>
+              </div>
+            </div>
+            <div class="react">
+              <label for="react">react</label>
+              <div class="bar">
+                <div class="progress" per="75" style="max-width: 75%;" ></div>
+              </div>
+            </div>
+            <div class="typescript">
+              <label for="typescript">typescript</label>
+              <div class="bar">
+                <div class="progress" per="50" style="max-width: 50%;" ></div>
+              </div>
+            </div>
+            <div class="git">
+              <label for="git">git & github</label>
+              <div class="bar">
+                <div class="progress" per="80" style="max-width: 80%;"></div>
+              </div>
+            </div>
+            <div class="next.js">
+              <label for="next.js">next.js</label>
+              <div class="bar">
+                <div class="progress" per="65" style="max-width: 65%;"></div>
+              </div>
+            </div>
+            <div class="python">
+              <label for="python">python</label>
+              <div class="bar">
+                <div class="progress" per="85" style="max-width: 85%;"></div>
+              </div>
+            </div>
 
+          </div>
+      </div>
+    </section>
     <!-- portfolio service section design -->
     <section class="portfolio" id="portfolio">
       <h2 class="heading">Latest <span>Project</span></h2>
@@ -175,53 +295,29 @@
           </div>
         </div>
 
-        <div class="portfolio-box">
-          <img src="images/project2.jpg" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet,consecteturadipisicing elit, sed do
-              eiusmod tempor
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
 
-        <div class="portfolio-box">
-          <img src="images/project3.jpg" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet,consecteturadipisicing elit, sed do
-              eiusmod tempor
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- contact design section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>me</span></h2>
 
-      <form action="#">
+      <form action="https://formspree.io/f/xleqjvnb" method="POST">
         <div class="input-box">
-          <input type="text" name="User's-name" placeholder="Full-Name" />
-          <input type="email" name="User's-name" placeholder="Email Address" />
+          <input type="text" name="Mail subject" placeholder="Mail Subject" />
+          <input type="text" name="User-name" placeholder="Full-Name" />
         </div>
 
         <div class="input-box">
+          <input type="email" name="email" placeholder="Email Address" />
           <input
-            type="number"
+            type="tel"
             name="Mobile Number"
             placeholder="Phone Number"
           />
-          <input type="text" name="Email subject" placeholder="Email Subject" />
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message">
-        </textarea>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" name="" value="Send Message" class="btn" />
       </form>
     </section>
@@ -239,7 +335,7 @@
       </div>
     </footer>
 
-    <!-- custom je -->
+    <!-- custom js -->
     <script src="Assets/script.js"></script>
   </body>
 </html>
