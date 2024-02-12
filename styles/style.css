@@ -46,7 +46,8 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 0 9%;
+  height: 70px;
   background: var(--text-color);
   display: flex;
   justify-content: space-between;
@@ -64,6 +65,8 @@ section {
 #check {
   display: none;
   font-size: 5rem;
+  color: var(--second-bg-color);
+  cursor: pointer;
 }
 .navbar a {
   font-size: 1.7rem;
@@ -76,7 +79,8 @@ section {
 }
 #menu-icon {
   font-size: 3.6rem;
-  color: var(--text-color);
+  cursor: pointer;
+  color: var(--second-bg-color);
   display: none;
 }
 
@@ -302,7 +306,7 @@ span {
   padding: 30px;
   align-items: center;
   width: min(800px, 90%);
-  height: 80vh;
+  height: 70vh;
   gap: 1.9rem;
   flex-wrap: wrap;
   overflow-y: auto;
