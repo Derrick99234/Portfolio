@@ -1,9 +1,9 @@
-@import url("https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap");
+/* @import url("https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap");
 @font-face {
   font-family: Roboto;
   src: url(../Roboto/Roboto-Regular.ttf);
   src: url(../Roboto/Roboto-Regular.ttf), format("ttf");
-}
+} */
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@
   outline: none;
   border: none;
   scroll-behavior: smooth;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 ::placeholder {
   color: #fff;
@@ -102,6 +102,45 @@ section {
   animation: img-animation 0.88s infinite ease-in-out alternate;
   /* transform: all 1s; */
 }
+
+:is(#fade-in-left, .about-img) {
+  transform: translateX(-50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
+}
+
+:is(.home-img, .about-content) {
+  transform: translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
+}
+
+:is(.home-img, .about-content).fade-up {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+:is(#fade-in-left, .about-img).loader {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.service-box {
+  transform: translateX(100px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.service-box.stagger {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
 .multi-text {
   position: relative;
 }
@@ -161,7 +200,7 @@ span {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: var(--second-bg-color);
 }
 
@@ -504,13 +543,13 @@ article.last-experience p {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: var(--second-bg-color);
+  background: var(--text-color);
   border-radius: 50%;
 }
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: var(--bg-color);
+  color: var(--second-bg-color);
 }
 
 .contact h2 {

@@ -39,10 +39,49 @@ html {
 }
 
 .about-header h1 {
-  /* font-size:  */
+  font-size: clamp(2.5rem, 10vw, 9rem);
   font-weight: 700;
   font-family: monospace;
 }
 .about {
   min-height: 80vh;
+}
+
+.project {
+  display: flex;
+}
+
+.project img {
+  width: 500px;
+  height: 300px;
+}
+.project-content {
+  background-color: #fff;
+}
+
+.project-content h3 {
+  font-size: 3rem;
+}
+
+.project-content p {
+  font-size: 1.9rem;
+}
+
+.project-content a {
+  font-size: 1.7rem;
+  margin-right: 10px;
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.about-img img {
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.about-img img::before {
+  content: '';
+  position: absolute;
+  
+  background-color: dodgerblue;
 }
