@@ -621,14 +621,18 @@ article.last-experience p {
   padding: 0.8rem;
   background: var(--text-color);
   border-radius: 0.8rem;
+}
+
+.footer .image-icon-top a i {
   transition: 0.5s ease;
+  font-size: 2.5rem;
+  color: var(--bg-color);
+  padding:8px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color);
 }
 
-.image-icon-top a:hover {
-  background: 0 0 1rem var(--main-color);
-}
-
-.footer .image-iconTop a i {
-  font-size: 4rem;
+.image-icon-top a i:hover {
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
