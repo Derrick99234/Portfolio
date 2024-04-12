@@ -5,9 +5,43 @@
   .home-content h1 {
     font-size: 4rem;
   }
+  section.about-page{
+  gap: 5rem;
+
+  }
   .home-content p {
     font-size: 1.5rem;
   }
+}
+@media screen and (max-width: 1054px) { 
+  section.about-page{
+    flex-direction: column;
+    padding-block: 3rem;
+    gap:0;
+
+  }
+  section.about-page div, .about-page-img {
+  max-width: calc(100% - 15%);
+  /* border: 1px solid red; */
+  /* position: relative; */
+}
+section.about-page div:nth-child(2){
+  margin-bottom: 2.5rem;
+}
+.about-page-img::before {
+  display: none;
+}
+.about-page-img img {
+  width: 100%;
+  position: relative;
+
+  top: -150px;
+  /* border: 1px solid red; */
+}
+
+.about-header h1 {
+  display: none;
+}  
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,6 +54,12 @@
   .home-content p {
     font-size: 1.3rem;
   }
+  section.about-page div p {
+    font-size: 2.5rem;
+  }
+  section.about-page div p {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 769px) {
   .navbar {
@@ -29,7 +69,7 @@
     top: 100%;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
-    width: 49%;
+    width: 70%;
     height: 100vh;
   }
   .skills-wrapper {

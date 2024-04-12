@@ -133,14 +133,35 @@ section {
   transform: translateX(100px);
   visibility: hidden;
   opacity: 0;
-  transition: all 2s;
 }
 
 .service-box.stagger {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
+  animation-name: stagger;
+  animation-duration: 0.4s;
+  /* animation-timeline: 1s; */
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
+.service-box:first-child.stagger{
+  animation-delay: 0.4s;
+}
+.service-box:nth-child(5).stagger{
+  animation-delay: 0.7s;
+}
+.service-box:last-child.stagger{
+  animation-delay: 1s;
+}
+
+@keyframes stagger {
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transition: all 2s;
+  transform: translateX(0); 
+  }
+}
+
 .multi-text {
   position: relative;
 }
@@ -313,9 +334,9 @@ span {
   margin: 2rem 0 4rem;
 }
 
-.services-container .service-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
+.service-box:hover {
+  /* border-color: var(--main-color); */
+  transform: translateY(10px);
 }
 
 .modal-container {
@@ -326,7 +347,6 @@ span {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   /* height: 100vh; */
-  z-index: 20;
   display: none;
 }
 .hideModal {
@@ -334,6 +354,7 @@ span {
 }
 .showModal {
   display: flex;
+z-index: 20;
   justify-content: center;
   align-items: center;
 }
@@ -346,6 +367,7 @@ span {
   align-items: center;
   width: min(800px, 90%);
   height: 70vh;
+  /* z-index: 30; */
   gap: 1.9rem;
   flex-wrap: wrap;
   overflow-y: auto;
@@ -627,7 +649,7 @@ article.last-experience p {
   transition: 0.5s ease;
   font-size: 2.5rem;
   color: var(--bg-color);
-  padding:8px;
+  padding:4px;
   border-radius: 50%;
   border: 2px solid var(--bg-color);
 }

@@ -23,19 +23,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /* ==============================  modal pop up  ===================== */
   const modalContainer = document.querySelectorAll(".modal-container");
+  const modals = document.querySelectorAll(".modal-container .modal");
   const webDevBtn = document.querySelectorAll("#modalBtn");
 
   webDevBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
       //   container.classList.toggle("showModal");
       btn === webDevBtn[0]
-        ? modalContainer[0].classList.toggle("showModal")
+        ? modalContainer[0].classList.add("showModal")
         : null;
       btn === webDevBtn[1]
-        ? modalContainer[1].classList.toggle("showModal")
+        ? modalContainer[1].classList.add("showModal")
         : null;
       btn === webDevBtn[2]
-        ? modalContainer[2].classList.toggle("showModal")
+        ? modalContainer[2].classList.add("showModal")
         : null;
     });
   });

@@ -107,28 +107,29 @@ html {
   font-weight: 700;
   font-family: monospace;
 }
-.about {
+/* .about {
   min-height: 80vh;
 }
+ */
 
-
-section.about {
+section.about-page {
   display: flex;
   gap: 10rem;
   align-items: center;
   min-height: 100vh;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-section.about div {
+section.about-page div {
   max-width: 320px;
 }
 
-.about-img {
+.about-page-img {
   position: relative;
 }
 
-.about-img::before {
+.about-page-img::before {
   content: "";
   position: absolute;
   background-color: var(--bg-color);
@@ -140,18 +141,18 @@ section.about div {
   z-index: -1;
 }
 
-.about-img img {
+.about-page-img img {
   width: 320px;
   height: 450px;
   border-radius: 15px;
 }
 
-section.about div h2 {
+section.about-page div h2 {
   font-size: 3rem;
   color: var(--second-bg-color);
 }
 
-section.about div p {
+section.about-page div p {
   font-size: 1.8rem;
   margin-block: 1.4rem;
   color: var(--second-bg-color);
@@ -160,7 +161,7 @@ section.about div p {
   text-wrap: balance;
 }
 
-section.about div .email-span {
+section.about-page div .email-span {
   font-size: 1.7rem;
 }
 
@@ -262,7 +263,7 @@ section.about div .email-span {
   transition: 0.5s ease;
   font-size: 2.5rem;
   color: var(--bg-color);
-  padding:8px;
+  padding:4px;
   border-radius: 50%;
   border: 2px solid var(--bg-color);
 }
