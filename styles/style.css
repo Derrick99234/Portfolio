@@ -22,9 +22,9 @@
 }
 :root {
   --bg-color: #2690a3;
-  --second-bg-color: #3d3b40;
+  --second-bg-color: #1b1b1b;
   --text-color: #fff;
-  --main-color: rgb(77, 198, 250);
+  --main-color: dodgerblue;
 }
 html {
   font-size: 62.5%;
@@ -142,23 +142,22 @@ section {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
-.service-box:first-child.stagger{
+.service-box:first-child.stagger {
   animation-delay: 0.4s;
 }
-.service-box:nth-child(5).stagger{
+.service-box:nth-child(5).stagger {
   animation-delay: 0.7s;
 }
-.service-box:last-child.stagger{
+.service-box:last-child.stagger {
   animation-delay: 1s;
 }
 
 @keyframes stagger {
-
   to {
     opacity: 1;
     visibility: visible;
     transition: all 2s;
-  transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
@@ -262,6 +261,8 @@ span {
   box-shadow: none;
 }
 
+/* About styles */
+
 .about {
   display: flex;
   justify-content: center;
@@ -288,6 +289,7 @@ span {
 }
 
 .about-content h3 {
+  color: var(--main-color);
   font-size: 2.6rem;
 }
 
@@ -295,8 +297,10 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
   color: var(--second-bg-color);
+  line-height: 1.7;
 }
 
+/* service style */
 .services h2 {
   margin-bottom: 5rem;
 }
@@ -316,6 +320,7 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
+  /* box-shadow: 0 0 15px rgba(19, 205, 238, 0.2); */
   transition: 0.5s ease;
   width: 300px;
 }
@@ -354,9 +359,18 @@ span {
 }
 .showModal {
   display: flex;
-z-index: 20;
+  z-index: 20;
   justify-content: center;
   align-items: center;
+}
+
+.close_modal {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  cursor: pointer;
+  color: var(--second-bg-color);
+  font-size: 3rem;
 }
 
 .modal {
@@ -366,6 +380,8 @@ z-index: 20;
   padding: 30px;
   align-items: center;
   width: min(800px, 90%);
+  padding-top: 50px;
+  position: relative;
   height: 70vh;
   /* z-index: 30; */
   gap: 1.9rem;
@@ -494,6 +510,7 @@ article.last-experience p {
     width: 100%;
   }
 }
+/* portfolio section */
 .portfolio h2 {
   margin-bottom: 4rem;
 }
@@ -649,7 +666,7 @@ article.last-experience p {
   transition: 0.5s ease;
   font-size: 2.5rem;
   color: var(--bg-color);
-  padding:4px;
+  padding: 4px;
   border-radius: 50%;
   border: 2px solid var(--bg-color);
 }

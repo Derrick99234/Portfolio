@@ -14,7 +14,7 @@
   --bg-color: #1f242d;
   --second-bg-color: #323946;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color: dodgerblue;
 }
 html {
   font-size: 62.5%;
@@ -32,7 +32,7 @@ html {
   padding: 0 9%;
   height: 70px;
   background: var(--text-color);
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -170,11 +170,11 @@ section.about-page div .email-span {
   color: var(--bg-color);
 }
 
-
 .project {
   display: flex;
   width: calc(100% - 10vw);
-  box-shadow: 0 0 15px color-mix(in srgb, var(--second-bg-color), transparent 80%);
+  box-shadow: 0 0 15px
+    color-mix(in srgb, var(--second-bg-color), transparent 80%);
   margin-inline: auto;
   margin-bottom: 70px;
 }
@@ -225,7 +225,7 @@ section.about-page div .email-span {
 .project-content a:last-child {
   background-color: var(--second-bg-color);
   color: var(--text-color);
-   border: 2px solid var(--second-bg-color);
+  border: 2px solid var(--second-bg-color);
 }
 
 /* .project-content a:last-child:hover {
@@ -233,7 +233,6 @@ section.about-page div .email-span {
   background-color: transparent;
   color: var(--second-bg-color);
 } */
-
 
 .footer {
   display: flex;
@@ -263,7 +262,7 @@ section.about-page div .email-span {
   transition: 0.5s ease;
   font-size: 2.5rem;
   color: var(--bg-color);
-  padding:4px;
+  padding: 4px;
   border-radius: 50%;
   border: 2px solid var(--bg-color);
 }

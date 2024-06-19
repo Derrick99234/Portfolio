@@ -1,7 +1,7 @@
 /*=================== scroll section active link ===================*/
 
 let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header nav a");
+let navLinks = document.querySelectorAll(".navbar a");
 window.addEventListener("DOMContentLoaded", () => {
   window.onscroll = () => {
     sections.forEach((sec) => {
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /* ==============================  modal pop up  ===================== */
   const modalContainer = document.querySelectorAll(".modal-container");
-  const modals = document.querySelectorAll(".modal-container .modal");
+  const close_modal = document.querySelectorAll(".close_modal");
   const webDevBtn = document.querySelectorAll("#modalBtn");
 
   webDevBtn.forEach((btn) => {
@@ -42,26 +42,12 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   modalContainer.forEach((container) => {
-    container.addEventListener("click", () => {
-      container.classList.remove("showModal");
+    close_modal.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        container.classList.remove("showModal");
+      });
     });
   });
-
-  /*==================== display header after scroll =========================*/
-  const header = document.querySelector(".about-header");
-  const nav = document.querySelector(".header");
-
-  // console.log(header);
-
-  window.onscroll = () => {
-    // window.scrollY === 300 ? console.log("hello") : null;
-    if (window.scrollY > header.scrollHeight) {
-      nav.style.display = "flex";
-    } else {
-      nav.style.display = "none";
-    }
-    // console.log(window.scrollY);
-  };
 
   /*==================== multiple text writing =========================*/
 
