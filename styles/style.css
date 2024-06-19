@@ -538,7 +538,12 @@ article.last-experience p {
 
 .portfolio-box img {
   width: 100%;
+  object-fit: contain;
+  object-position: top;
   transition: 0.5s ease;
+}
+.portfolio-box:nth-child(2) img {
+  object-fit: cover;
 }
 
 .portfolio-box:hover img {
