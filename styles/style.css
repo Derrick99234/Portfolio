@@ -28,16 +28,18 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 body {
+  overflow-x: hidden;
   background: var(--bg-color);
   color: var(--text-color);
 }
 
 section {
   min-height: 100vh;
+  overflow: hidden;
   padding: 10rem 9% 2rem;
+  /* border: 2px solid red; */
   background-color: var(--text-color);
 }
 
@@ -45,6 +47,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 0 9%;
   height: 70px;
@@ -98,6 +101,7 @@ section {
 
 .home-img img {
   width: 35vw;
+  height: 430px;
   border-radius: 15px;
   animation: img-animation 0.88s infinite ease-in-out alternate;
   /* transform: all 1s; */
@@ -519,8 +523,6 @@ article.last-experience p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-flow: row wrap; */
-  align-content: center;
   gap: 2.5rem;
   flex-wrap: wrap;
 }
@@ -530,7 +532,8 @@ article.last-experience p {
   /* max-width: 500px; */
   height: 400px;
   flex: 1 0 40rem;
-  /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); */
+  width: 100%;
+  /* box-shadow: 0 0 1rem rgbsa(0, 0, 0, 0.2); */
   overflow: hidden;
   /* border: 2px solid red; */
   display: flex;
@@ -594,6 +597,10 @@ article.last-experience p {
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+section.contact {
+  min-height: 80vh;
 }
 
 .contact h2 {

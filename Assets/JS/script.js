@@ -68,3 +68,12 @@ window.addEventListener("DOMContentLoaded", () => {
   textLoad();
   setInterval(textLoad, 12000);
 });
+
+// const nav = document.querySelector(".navbar");
+// const close_icon = document.querySelector("#close-icon");
+// const menu = document.querySelector("#menu-icon");
+// nav.addEventListener("click", () => {
+//   nav.style.display = "none";
+//   close_icon.style.display = "none";
+//   menu.style.display = "block";
+// });
