@@ -1,8 +1,8 @@
-/*=================== scroll section active link ===================*/
-
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll(".navbar a");
 window.addEventListener("DOMContentLoaded", () => {
+  /*=================== scroll section active link ===================*/
+  let sections = document.querySelectorAll("section");
+  let navLinks = document.querySelectorAll(".navbar a");
+
   window.onscroll = () => {
     sections.forEach((sec) => {
       let top = window.scrollY;
@@ -13,9 +13,14 @@ window.addEventListener("DOMContentLoaded", () => {
       if (top >= offset && top < offset + height) {
         navLinks.forEach((links) => {
           links.classList.remove("active");
-          document
-            .querySelector("header nav a[href*=" + id + "]")
-            .classList.add("active");
+          let navLink = document.querySelector(
+            "header nav a[href*=" + id + "]"
+          );
+          if (navLink) {
+            navLink.classList.add("active");
+          } else {
+            console.log("Element not found for section id: " + id);
+          }
         });
       }
     });

@@ -105,7 +105,7 @@
     display: inline-block;
     font-size: 5rem;
   }
-  /* #check:checked + .icons #menu-icon {
+  #check:checked + .icons #menu-icon {
     display: none;
   }
   #check:checked ~ .icons #close-icon {
@@ -113,7 +113,7 @@
   }
   #check:checked ~ nav[class="navbar"] {
     display: block;
-  } */
+  }
 
   .home div.home-content {
     flex-flow: column-reverse wrap;
