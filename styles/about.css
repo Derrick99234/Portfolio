@@ -32,6 +32,7 @@ html {
   padding: 0 9%;
   height: 70px;
   background: var(--text-color);
+  background-color: white;
   display: none;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +91,7 @@ html {
 .about-header {
   background: url(../images/about.jpg);
   background-color: rgba(0, 0, 0, 0.4);
-  /* mix-blend-mode: multiply; */
+  mix-blend-mode: multiply;
   background-blend-mode: multiply;
   height: 50vh;
   background-repeat: no-repeat;
@@ -103,9 +104,9 @@ html {
 }
 
 .about-header h1 {
-  font-size: clamp(2.5rem, 10vw, 9rem);
+  font-size: clamp(3rem, 10vw, 9rem);
   font-weight: 700;
-  font-family: monospace;
+  /* font-family: monospace; */
 }
 /* .about {
   min-height: 80vh;

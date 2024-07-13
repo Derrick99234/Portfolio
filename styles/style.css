@@ -545,7 +545,7 @@ article.last-experience p {
   object-position: top;
   transition: 0.5s ease;
 }
-.portfolio-box:nth-child(2) img {
+.portfolio-box:nth-child(4) img {
   object-fit: cover;
 }
 
